@@ -88,7 +88,7 @@ const MapGoogle = ({data, apiKey}) => {
 
 export default React.memo(GoogleMap);
 
-GoogleMap.propTypes = {
+MapGoogle.propTypes = {
   data: PropTypes.object.isRequired,
   apiKey: PropTypes.string.isRequired,
 };
