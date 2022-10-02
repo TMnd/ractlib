@@ -1,0 +1,12 @@
+.footer-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, .15);
+    background-color: var(--footer-bg-color);
+}
+
+.footer-body > div{
+    margin-top: 15px;
+}

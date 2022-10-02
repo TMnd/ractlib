@@ -1,0 +1,53 @@
+.gallery--body--controller{
+    padding: 15px;
+}
+
+.gallery--body--controller > select{
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background: #fff url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%274%27 height=%275%27 viewBox=%270 0 4 5%27%3e%3cpath fill=%27%23343a40%27 d=%27M2 0L0 2h4zm0 5L0 3h4z%27/%3e%3c/svg%3e") right .75rem center/8px 10px no-repeat;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    appearance: none;
+}
+
+.gallery--body--gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0px 15px 15px 15px;
+    justify-content: center;
+}
+
+
+
+.gallery--body--pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+
+.gallery--body--pagination > div{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.gallery--body--pagination > div:hover {
+    background-color: var(--navbar-select-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: var(--navbar-select-color);
+}

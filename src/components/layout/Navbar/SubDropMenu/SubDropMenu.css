@@ -1,0 +1,12 @@
+.navbar-sub-menu{
+    display: none;
+}
+
+.navbar-sub-menu-show{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

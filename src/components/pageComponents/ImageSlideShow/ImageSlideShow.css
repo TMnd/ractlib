@@ -1,0 +1,23 @@
+.image--slideshow--section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.image--slideshow--section--view--list{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image--slideshow--section--view--list::-webkit-scrollbar{
+    display: none;
+}
+
+.image--slideshow--section--view--list > div > img {
+    width: 50px;
+}

@@ -1,0 +1,83 @@
+.tabs--nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--navbar-border-color);
+    padding-bottom: 20px;
+}
+
+.tabs-active{
+    border-bottom: 3px solid var(--navbar-border-color);
+    font-weight: bold;
+}
+
+.tabs--nav:hover{
+    cursor: pointer;
+}
+
+.tabs--nav > li{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tabs--nav > li:hover {
+    background: var(--navbar-border-color);
+}
+
+.tabSectionOne{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.tabSectionTwo .tabSectionThree{
+    display: flex;
+    flex-direction: row;
+}
+
+.tabSectionTwo_One, 
+.tabSectionTwo_Two, 
+.tabSectionThree_One, 
+.tabSectionThree_Two{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.FieldSet--title{
+    text-align: center;
+}
+
+.tab--spacing > div {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.tab--spacing > div > li{
+    list-style-type: "- ";
+}
+
+/* .tabSectionThree{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+} */
+
+.tab--content--body{
+    padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .tabSectionThree{
+        flex-direction: row; 
+        gap: 100px;
+    }
+
+    .tabSectionTwo_One, 
+    .tabSectionTwo_Two, 
+    .tabSectionThree_One, 
+    .tabSectionThree_Two{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

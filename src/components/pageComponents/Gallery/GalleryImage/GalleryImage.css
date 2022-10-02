@@ -1,0 +1,54 @@
+.gallery--element--body{
+    position: relative;
+}
+
+.gallery--element--viewer{
+    position: absolute;
+    margin-top: 110px;
+    visibility: hidden;
+    opacity: 0.6;
+}
+
+.viewer-hidden{
+    visibility: hidden;
+}
+
+
+.gallery--element--body > img{
+    width: 150px;
+}
+
+.gallery--element--body > h2{
+    width: 138px;
+    padding: .5em 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.roll-out {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.gallery--element--image:hover{
+    opacity: 0.5;
+    background-color: grey;
+    cursor: pointer;
+}
+
+/* .gallery--element--image:hover{
+    opacity: 0.5;
+    background-color: grey;
+    cursor: pointer;
+} */

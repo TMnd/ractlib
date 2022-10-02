@@ -1,0 +1,64 @@
+{
+    "name": "ractlib",
+    "version": "1.0.0",
+    "description": "Library of components for react projects.",
+    "author": "TMnd",
+    "license": "MIT",
+    "repository": "TMnd/ractlib",
+    "main": "dist/index.js",
+    "module": "dist/index.modern.js",
+    "source": "src/index.js",
+    "engines": {
+        "node": ">=10"
+    },
+    "scripts": {
+        "build": "microbundle-crl --no-compress --format modern,cjs",
+        "start": "microbundle-crl watch --no-compress --format modern,cjs",
+        "prepare": "run-s build",
+        "test": "run-s test:unit test:lint test:build",
+        "test:build": "run-s build",
+        "test:lint": "eslint .",
+        "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
+        "test:watch": "react-scripts test --env=jsdom",
+        "predeploy": "cd example && yarn install && yarn run build",
+        "deploy": "gh-pages -d example/build"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0"
+    },
+    "devDependencies": {
+        "@testing-library/react": "13.4.0",
+        "babel-eslint": "^10.0.3",
+        "cross-env": "^7.0.2",
+        "eslint": "^8.23.1",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-config-standard-react": "^11.0.1",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-node": "^11.0.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-promise": "^6.0.1",
+        "eslint-plugin-react": "^7.17.0",
+        "eslint-plugin-standard": "^5.0.0",
+        "gh-pages": "^4.0.0",
+        "microbundle-crl": "^0.13.10",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^2.0.4",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-scripts": "^5.0.1"
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.2.0",
+        "@fortawesome/free-solid-svg-icons": "^6.2.0",
+        "@fortawesome/react-fontawesome": "^0.2.0",
+        "@react-google-maps/api": "^2.13.1",
+        "@testing-library/user-event": "^14.4.3",
+        "axios": "^0.27.2",
+        "react-router-dom": "^6.4.1"
+    }
+}

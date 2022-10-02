@@ -1,0 +1,19 @@
+.card, .card--noHover{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.card:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card > img:hover{
+    color: #f9f9f9;
+}
+
+.card--image{
+    width: 90px;
+}
